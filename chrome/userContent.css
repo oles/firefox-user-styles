@@ -1,1 +1,114 @@
-/home/oles/.themes/firefox/userContent.css
+@-moz-document url("chrome://devtools/content/responsive.html/index.xhtml") {
+    #app {
+        padding: 0 !important;
+        background-color: #222;
+
+        align-items: start !important;
+        flex-direction: row-reverse !important;
+        overflow-y: hidden;
+    }
+
+    #global-toolbar {
+        border: none !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+
+        padding: 5px !important;
+        box-shadow: none !important;
+    }
+
+    #global-toolbar > .toolbar-button {
+        padding: 2px !important;
+        margin: 0 !important;
+    }
+
+    #global-toolbar .title,
+    #global-exit-button,
+    #global-network-throttling-selector,
+    #global-device-pixel-ratio-selector,
+    #global-reload-conditions-menu,
+    #global-screenshot-button,
+    .viewport-resize-handle,
+    .viewport-toolbar {
+        display: none !important;
+    }
+
+    #viewports {width: 100%}
+
+    .viewport {
+        display: flex !important;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .viewport-dimension-editable {
+        background-color: var(--theme-toolbar-background);
+        padding: 6px 0px !important;
+        border: none !important;
+    }
+
+    .resizable-viewport {
+        margin-right: auto;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
+
+
+
+@-moz-document regexp("https://app\\.zeplin\\.io.*/screen.*") {
+    .widgets .versionsToggle,
+    #addNoteButton,
+    #toggleNotes,
+    #versionsTutorialCircle,
+    header,
+    .sidebar .resizer,
+    .screenSidebar .sidebarView.scrollable,
+    .snippet .lineno,
+    .snippet .language-css .lineWrapper:first-of-type,
+    .snippet .language-css .lineWrapper:last-of-type,
+    .codePanel .gutter,
+    .supportButton {
+        display: none !important
+    }
+
+    main {height: 100vh !important}
+
+    #screenContainer {margin: 0 !important}
+    #screenImage {outline: none !important}
+    .widgets {justify-content: flex-end !important}
+
+    #dotgrid {
+        padding: 0 !important;
+        width: auto !important;
+        height: auto !important;
+        background-image: none !important;
+        background-color: #222;
+    }
+
+    .sidebar.screenSidebar {
+        width: auto !important;
+        min-width: auto !important;
+        max-width: 210px !important;
+    }
+
+    .snippet .language-css .line {
+        text-indent: inherit !important;
+        padding: inherit !important;
+    }
+}
+
+
+
+@-moz-document regexp("https://mail\\.protonmail\\.com/.*") {
+    #conversationHeader,
+    .unsubscribePanel-container,
+    .navigationItem-container[data-key="allmail"],
+    .countElementsSelected-container,
+    .storageProgress-container .link,
+    .appVersion-container,
+    #pm_latest {
+        display: none !important
+    }
+}

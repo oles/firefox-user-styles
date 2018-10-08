@@ -1,1 +1,22 @@
-/home/oles/.themes/firefox/userChrome.css
+@-moz-document url(chrome://browser/content/browser.xul) {
+    #TabsToolbar .tab-close-button,
+    #page-action-buttons,
+    .urlbar-history-dropmarker {
+        display: none !important;
+    }
+}
+
+@-moz-document url(about:devtools-toolbox) {
+    #toolbox-tab-jsdebugger {
+        display: none !important;
+    }
+}
+
+@-moz-document url-prefix(chrome://devtools/content/inspector) {
+    #inspector-breadcrumbs-toolbar,
+    #inspector-element-add-button {
+        display: none !important;
+    }
+
+    #inspector-splitter-box .uncontrolled {overflow: hidden !important}
+}
