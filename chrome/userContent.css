@@ -1,56 +1,30 @@
 @-moz-document url("chrome://devtools/content/responsive.html/index.xhtml") {
-    #app {
-        padding: 0 !important;
-        background-color: #222;
-
-        align-items: start !important;
-        flex-direction: row-reverse !important;
-        overflow-y: hidden;
+    #viewports-container {
+        background-color: #222 !important;
     }
 
-    #global-toolbar {
-        border: none !important;
-        border-radius: 0 !important;
-        margin: 0 !important;
-
-        padding: 5px !important;
-        box-shadow: none !important;
-    }
-
-    #global-toolbar > .toolbar-button {
-        padding: 2px !important;
-        margin: 0 !important;
-    }
-
-    #global-toolbar .title,
-    #global-exit-button,
-    #global-network-throttling-selector,
-    #global-device-pixel-ratio-selector,
-    #global-reload-conditions-menu,
-    #global-screenshot-button,
-    .viewport-resize-handle,
-    .viewport-toolbar {
-        display: none !important;
-    }
-
-    #viewports {width: 100%}
-
-    .viewport {
+    #toolbar {
+        position: fixed !important;
+        bottom: 0 !important;
+        right: 0 !important;
         display: flex !important;
-        flex-direction: row-reverse;
-        align-items: flex-start;
+        width: auto !important;
     }
 
-    .viewport-dimension-editable {
-        background-color: var(--theme-toolbar-background);
-        padding: 6px 0px !important;
-        border: none !important;
-    }
+    #viewports {margin: 0 !important}
 
     .resizable-viewport {
-        margin-right: auto;
-        border: none !important;
+        border: 0 !important;
         box-shadow: none !important;
+    }
+
+    #device-selector,
+    #rotate-button,
+    #network-throttling-menu,
+    #screenshot-button,
+    #exit-button,
+    #toolbar .devtools-separator {
+        display: none !important;
     }
 }
 
