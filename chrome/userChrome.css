@@ -6,11 +6,13 @@
     }
 }
 
+
 @-moz-document url(about:devtools-toolbox) {
     #toolbox-tab-jsdebugger {
         display: none !important;
     }
 }
+
 
 @-moz-document url-prefix(chrome://devtools/content/inspector) {
     #inspector-breadcrumbs-toolbar,
@@ -19,4 +21,12 @@
     }
 
     #inspector-splitter-box .uncontrolled {overflow: hidden !important}
+}
+
+
+@-moz-document url-prefix(chrome://devtools/content/webconsole) {
+    .jsterm-input-container {
+        flex-grow: 0 !important;
+        margin-top: auto !important;
+    }
 }
