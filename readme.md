@@ -1,1 +1,1 @@
-Initialize inside `~/.mozilla/firefox/<profile>.default/`
+Initialize inside `~/.mozilla/firefox/<profile>.default-<type>/`
