@@ -7,13 +7,6 @@
 }
 
 
-@-moz-document url(about:devtools-toolbox) {
-    #toolbox-tab-jsdebugger {
-        display: none !important;
-    }
-}
-
-
 @-moz-document url-prefix(chrome://devtools/content/inspector) {
     #inspector-breadcrumbs-toolbar,
     #inspector-element-add-button {
