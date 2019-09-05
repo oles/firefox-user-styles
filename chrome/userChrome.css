@@ -1,4 +1,4 @@
-@-moz-document url(chrome://browser/content/browser.xul) {
+@-moz-document url-prefix(chrome://browser/content/browser) {
     #TabsToolbar .tab-close-button,
     #page-action-buttons,
     .urlbar-history-dropmarker {
